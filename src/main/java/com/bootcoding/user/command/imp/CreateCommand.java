@@ -7,6 +7,7 @@ import com.bootcoding.user.model.User;
 import com.bootcoding.user.util.ValidationUtility;
 import com.bootcoding.user.store.InMemoryStore;
 
+import java.util.Random;
 import java.util.UUID;
 
 public class CreateCommand implements Command, CommandValidator {
@@ -21,8 +22,9 @@ public class CreateCommand implements Command, CommandValidator {
     }
 
     private User createUser(String[] attributes) throws Exception{
+        Random random = new Random();
         User user = User.builder()
-                .id(UUID.randomUUID().toString())
+                .id(String.valueOf(random.nextInt(0000,9999)))
                 .build();
         for(int i = 1; i < attributes.length ; i = i + 2) {
             String attrName = attributes[i];
