@@ -4,8 +4,8 @@
   - Create User using command as create
     - Provide user attributes 
       - -n for name
-      - -p for phone
       - -a for address
+      - -p for phone
       - -e for email id
 
   - Read User using command as read
