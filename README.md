@@ -1,4 +1,4 @@
-# Design User Management system using Command Line Interface (CLI)
+# User Management system using Command Line Interface (CLI)
 
 ## Features
   - Create User using command as create
